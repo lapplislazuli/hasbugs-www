@@ -1,0 +1,82 @@
+baseURL: "https://www.example.com/"
+theme: "up-business-theme"
+languageCode: "en-us"
+
+title: "HasBugs"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "HasBugs"
+  description: "A Dataset of Haskell Bugs"
+  images: 
+    - "static/images/mona-3.svg"
+
+  logo: "static/images/engerling-3.svg"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  location:
+    - "3891 Ranchview Dr. Richardson, California 62639"
+    - "4517 Washington Ave. Manchester, Kentucky 39495"
+
+  contact:
+    - "trungkienspktnd@gamail.com"
+    - "207.555.0119"
+
+  copyright: "© 2022 Leonhard Applis All Rights Reserved"
+
+  postProcess: false
+
+staticDir:
+  - static
+
+menus:
+  main:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    - name: "Bug Showcase"
+      url: "/#"
+      weight: 2
+
+    - name: "Tutorial"
+      url: "/#"
+      weight: 3
+
+    - name: "Contact"
+      url: "/#"
+      weight: 4
+
+  buttons:
+    - name: "Github"
+      url: "https://github.com/ciselab/hasbugs"
+      weight: 5
+      pre: "btn btn-primary text-light"
+
+  footer:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    - name: "Bug Showcase"
+      url: "/#"
+      weight: 2
+
+    - name: "Tutorial"
+      url: "/#"
+      weight: 3
+
+    - name: "Contact"
+      url: "/#"
+      weight: 4
+
+taxonomies:
+  series: "series"
+  tags: "tags"
