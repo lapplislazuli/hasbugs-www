@@ -3,7 +3,7 @@ id: "hero"
 
 content:
   title: "Haskell Bugs - Functional Bugs and their Fixes"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est faucibus tellus leo non pellentesque lorem vel. Arcu magna eros, potenti duis."
+  text: "When it compiles it's correct. Unless it isn't."
 
   buttonPrimary:
     label: "Summary"
@@ -11,5 +11,5 @@ content:
 
   buttonSecondary:
     label: "To the Data"
-    url: "#/Bug-Showcase"
+    url: "/bug-showcase"
 

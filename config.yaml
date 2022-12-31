@@ -12,9 +12,9 @@ params:
   title: "HasBugs"
   description: "A Dataset of Haskell Bugs"
   images: 
-    - "static/images/mona-3.svg"
+    - "images/engerling-3.png"
 
-  logo: "static/images/engerling-3.svg"
+  logo: "images/engerling-3.svg"
 
   favicons:
     themeColor: "#FFFFFF"
@@ -43,15 +43,15 @@ menus:
       weight: 1
 
     - name: "Bug Showcase"
-      url: "/#"
+      url: "/bug-showcase"
       weight: 2
 
     - name: "Tutorial"
-      url: "/#"
+      url: "/tutorial"
       weight: 3
 
     - name: "Contact"
-      url: "/#"
+      url: "/contact"
       weight: 4
 
   buttons:
@@ -66,15 +66,15 @@ menus:
       weight: 1
 
     - name: "Bug Showcase"
-      url: "/#"
+      url: "/bug-showcase"
       weight: 2
 
     - name: "Tutorial"
-      url: "/#"
+      url: "/tutorial"
       weight: 3
 
     - name: "Contact"
-      url: "/#"
+      url: "/contact"
       weight: 4
 
 taxonomies:
