@@ -2,8 +2,8 @@ enabled: true
 id: "cta"
 
 content:
-  title: "Start your business now!"
+  title: "Embrace the Bugs!"
   image: "images/engerling-3.svg"
   button:
-    label: "Let's talk"
-    url: "#"
+    label: "Showcase"
+    url: "/bug-showcase"

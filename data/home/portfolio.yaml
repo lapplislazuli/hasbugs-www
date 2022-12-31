@@ -3,8 +3,8 @@ id: "portfolio"
 
 content:
   - image: "images/engerling-3.svg"
-    pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
+    pretitle: "Problem 1"
+    title: "Information"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
 
     buttons: 
@@ -15,8 +15,8 @@ content:
         url: "#"
 
   - image: "images/engerling-3.png"
-    pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
+    pretitle: "Problem 2"
+    title: "Accessability"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
 
     buttons: 
@@ -27,8 +27,20 @@ content:
         url: "#"
 
   - image: "images/mona-3.svg"
-    pretitle: "Portfolio Service"
-    title: "We developed an eCommerce website"
+    pretitle: "Problem 3"
+    title: "Reproducibility"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons: 
+      - label: "See live"
+        url: "#"
+
+      - label: "Read more"
+        url: "#"
+
+  - image: "images/mona-3.svg"
+    pretitle: "Problem 4"
+    title: "Quality"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
 
     buttons: 
