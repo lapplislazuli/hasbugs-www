@@ -12,14 +12,14 @@ content:
         label: "Docker Images"
         url: "#"
 
-    - image: "/images/engerling-3.png"
+    - image: "images/engerling-3.png"
       title: "Fault-Reason"
       text: "We provide a small, high quality dataset. Everyhing has been human-evaluated. No more puzzling for you if your Automated Program Repair does something good - because we specify what was wrong in the first place."
       button:
         label: "Learn more"
         url: "#"
 
-    - image: "../images/engerling-3.png"
+    - image: "images/engerling-3.png"
       title: "Detailed Datapoints"
       text: "Picking up best practices, with our dataset you get tests, multi-location faults, frameworks,related issues and much more"
       button:

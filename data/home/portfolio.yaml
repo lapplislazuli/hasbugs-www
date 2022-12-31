@@ -2,7 +2,7 @@ enabled: true
 id: "portfolio"
 
 content:
-  - image: "images/engerling-3.svg"
+  - image: "images/engerling-3.png"
     pretitle: "Problem 1"
     title: "Information"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
@@ -26,7 +26,7 @@ content:
       - label: "Read more"
         url: "#"
 
-  - image: "images/mona-3.svg"
+  - image: "images/engerling-3.png"
     pretitle: "Problem 3"
     title: "Reproducibility"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
@@ -38,7 +38,7 @@ content:
       - label: "Read more"
         url: "#"
 
-  - image: "images/mona-3.svg"
+  - image: "images/engerling-3.png"
     pretitle: "Problem 4"
     title: "Quality"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
