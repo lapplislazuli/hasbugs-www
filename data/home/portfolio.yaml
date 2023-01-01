@@ -5,7 +5,11 @@ content:
   - image: "images/engerling-3.png"
     pretitle: "Problem 1"
     title: "Information"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+    text: "What is happening? To effectively work with bugs, you need to understand the problem. 
+    Many datasets lack descriptions, or are defined by 'failing ci'. That is not enough! 
+    A lot of research had issues due to missing information, or produced patches could not be assessed. 
+    Also, different task need different information - for many datasets these are only derived from builds or using tools. 
+    We deserve better."
 
     buttons: 
       - label: "See live"
@@ -17,7 +21,12 @@ content:
   - image: "images/engerling-3.png"
     pretitle: "Problem 2"
     title: "Accessability"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+    text: "Things you can't use are not really useful. 
+    We know that working with datasets isn't exactly a walk in the park. 
+    By design it's a hard task, and organizing many different projects in the same way can be harmful too.
+    Static approaches, dynamic approaches, grounded theory, etc. are all valid approaches that can bring us further as researchers.
+    Let's try to help pick everyone up.
+    "
 
     buttons: 
       - label: "See live"
@@ -29,7 +38,12 @@ content:
   - image: "images/engerling-3.png"
     pretitle: "Problem 3"
     title: "Reproducibility"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+    text: "Recently someone asked me if it is worth the effort caring for reproducibility. 
+    Noone reuses your things and if one or two people want to, they can just sent you an email. 
+    I am still thinking a lot about this. I think there is some truth to it.
+    However, I have also seen how much time and energy I used to reproduce results.
+    Maybe exact reproducibility is a myth, but wouldn't it be nice to have things that give some output?"
+
 
     buttons: 
       - label: "See live"
@@ -41,7 +55,12 @@ content:
   - image: "images/engerling-3.png"
     pretitle: "Problem 4"
     title: "Quality"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+    text: "Bugs are not the same. Datapoints can vary greatly in their information-granularity and quantity. 
+    Many datasets mine their datapoints by automatic tools without manual inspection, or sampling at best.
+    That leads to big datasets that can be used for machine learning, to produce models that are only evaluated on sampling.
+    That is all fun and games, but to really put things to the test you need a human-evaluated gold standard to test against.
+    We got you covered.
+    "
 
     buttons: 
       - label: "See live"
