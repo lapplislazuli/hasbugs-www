@@ -1,0 +1,232 @@
+[
+    {
+        "id": "cabal-1",
+        "repositoryurl": "git@github.com:haskell/cabal",
+        "repository": "cabal",
+        "license": "BSD-3",
+        "faultcommit": "0184445b83af20dd9bb0e2ec09a8ba4b8d14a755",
+        "fixcommit": "55e036a2c40586bc0f69aaa7d85aab931a0a5c80",
+        
+        "ghcversion": "8.10.7",
+        "buildframework": "stack",
+        "testframeworks": ["QuickCheck", "tasty", "tasty-quickcheck", "Cabal-QuickCheck", "tasty-hunit", "tasty-golden", "tasty-expected-failure"],
+    
+        "testpatch": true,
+        "description": "'cabal run' termination does not terminate all child processes automatically as well. The solution is to use 'withCreateProcess' rather than 'createProcess' and throw an asynchronous exception from the main thread when a termination is wanted.",
+        "categories": ["system-test"],
+        
+        "relatedissues": ["https://github.com/haskell/cabal/issues/7914"],
+        "relatedprs": ["https://github.com/haskell/cabal/pull/7921", "https://github.com/haskell/cabal/pull/7757"],
+        
+        "faultlocations" : [
+         {
+            "startline": 127,
+            "endline": 127,
+            "file": "cabal/src/distribution/simple/program/run.hs",
+            "module": "distribution.simple.program.run",
+            "function": "runprograminvocation"
+         },{
+            "startline": 131,
+            "endline": 132,
+            "file": "cabal/src/distribution/simple/program/run.hs",
+            "module": "distribution.simple.program.run",
+            "function": "runprograminvocation"
+         },{
+             "startline": 1196,
+             "endline": 1197,
+             "file": "cabal-install/src/Distribution/Client/ProjectConfig.hs",
+             "module": "Distribution.Client.ProjectConfig",
+             "function": "syncAndReadSourcePackagesRemoteRepos"
+         }
+         ],
+         "fixlocations" : [
+         {
+            "startline": 127,
+            "endline": 127,
+            "file": "cabal/src/distribution/simple/program/run.hs",
+            "module": "distribution.simple.program.run",
+            "function": "runprograminvocation"
+         },{
+             "startline": 175,
+             "endline": 175,
+             "file": "cabal-install/main/Main.hs",
+             "module": "Main",
+             "function": "main"
+         },{
+             "startline": 1196,
+             "endline": 1196,
+             "file": "cabal-install/src/Distribution/Client/ProjectConfig.hs",
+             "module": "Distribution.Client.ProjectConfig",
+             "function": "syncAndReadSourcePackagesRemoteRepos"
+         },{
+             "startline": 1,
+             "endline": 49,
+             "file": "cabal-install/src/Distribution/Client/Signal.hs",
+             "module": "Distribution.Client.Signal",
+             "function": ""
+         }
+         ]
+    },
+    {
+        "id": "hls-1",
+        "repositoryurl": "git@github.com:haskell/haskell-language-server",
+        "repository": "hls",
+        "license": "Apache-2.0",
+        "faultcommit": "ffefe761c8210c6b4a0c5092935f34767a3cd827",
+        "fixcommit": "0f6cd41d51e1dd81ddeb117ab949ceb1f38e68cf",
+        
+        "ghcversion": "9.2.3",
+        "buildframework": "stack",
+        "testframeworks": ["lsp-test", "tasty", "tasty-expected-failure", "tasty-golden", "tasty-hunit", "tasty-rerun", "tasty-hspec", "hspec", "QuickCheck", "tasty-quickcheck", "ghcide-test-utils"],
+    
+        "testpatch": true,
+        "description": "When records are punned, there is a reference from pun to field declaration and from pun-name use to pun-declaration, but no transitive one. Meaning refactoring did not propagate to the latter. Solution is a second pass to find indirect pun references and rename those as well.",
+        "categories": ["integration-test"],
+        
+        "relatedissues": ["https://github.com/haskell/haskell-language-server/issues/2970"],
+        "relatedprs": ["https://github.com/haskell/haskell-language-server/pull/3013"],
+        
+        "faultlocations" : [
+        {
+            "startline": 69,
+            "endline": 77,
+            "file" : "plugins/hls-rename-plugin/src/Ide/Plugin/Rename.hs",
+            "module" : "Ide.Plugin.Rename",
+            "function": "renameProvider"
+        },{
+            "startline": 96,
+            "endline": 96,
+            "file" : "plugins/hls-rename-plugin/src/Ide/Plugin/Rename.hs",
+            "module" : "Ide.Plugin.Rename",
+            "function": "failWhenImportOrExport"
+        }
+        ],
+        "fixlocations" : [
+        {
+            "startline": 68,
+            "endline": 88,
+            "file" : "plugins/hls-rename-plugin/src/Ide/Plugin/Rename.hs",
+            "module" : "Ide.Plugin.Rename",
+            "function": "renameProvider"
+        },{
+            "startline": 107,
+            "endline": 107,
+            "file" : "plugins/hls-rename-plugin/src/Ide/Plugin/Rename.hs",
+            "module" : "Ide.Plugin.Rename",
+            "function": "failWhenImportOrExport"
+        },{
+            "startline": 249,
+            "endline": 253,
+            "file" : "plugins/hls-rename-plugin/src/Ide/Plugin/Rename.hs",
+            "module" : "Ide.Plugin.Rename",
+            "function": "locToFilePos"
+        }
+        ]
+    },
+    {
+        "id": "purescript-1",
+        "repositoryurl": "git@github.com:purescript/purescript",
+        "repository": "purescript",
+        "license": "Custom Copyleft",
+        "faultcommit": "3d6b8bf7ffee6c6be85580b7daa765a9b54d0564",
+        "fixcommit": "ea118aec3d54a4918825b1e438d3ae4bb9181447",
+        
+        "ghcversion": "9.2.4",
+        "buildframework": "cabal",
+        "testframeworks": ["hspec", "hunit", "quickcheck"],
+    
+        "testpatch": true,
+        "description": "When users asked for possible values in Type Holes, the suggested values where (sometimes) duplicated",
+        "categories": ["desugaring-issue", "integration"],
+        
+        "relatedissues": ["https://github.com/purescript/purescript/issues/4373"],
+        "relatedprs": ["https://github.com/purescript/purescript/pull/4374"],
+        
+        "faultlocations" : [
+            {
+            "startline": 383,
+            "endline": 384,
+            "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+            "module" : "Language.PureScript.Sugar.CaseDeclarations",
+            "function": "makeCaseDeclaration"
+        },{
+            "startline": 386,
+            "endline": 386,
+            "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+            "module" : "Language.PureScript.Sugar.CaseDeclarations",
+            "function": "makeCaseDeclaration"
+        },
+        {
+            "startline": 394,
+            "endline": 395,
+            "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+            "module" : "Language.PureScript.Sugar.CaseDeclarations",
+            "function": "makeCaseDeclaration"
+        },
+        {
+            "startline": 404,
+            "endline": 406,
+            "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+            "module" : "Language.PureScript.Sugar.CaseDeclarations",
+            "function": "makeCaseDeclaration"
+        },
+        {
+            "startline": 410,
+            "endline": 410,
+            "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+            "module" : "Language.PureScript.Sugar.CaseDeclarations",
+            "function": "makeCaseDeclaration"
+        },
+        {
+            "startline": 415,
+            "endline": 415,
+            "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+            "module" : "Language.PureScript.Sugar.CaseDeclarations",
+            "function": "makeCaseDeclaration"
+        }
+        ],
+        "fixlocations" : [
+            {
+                "startline": 383,
+                "endline": 384,
+                "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+                "module" : "Language.PureScript.Sugar.CaseDeclarations",
+                "function": "makeCaseDeclaration"
+            },{
+                "startline": 386,
+                "endline": 386,
+                "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+                "module" : "Language.PureScript.Sugar.CaseDeclarations",
+                "function": "makeCaseDeclaration"
+            },
+            {
+                "startline": 394,
+                "endline": 395,
+                "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+                "module" : "Language.PureScript.Sugar.CaseDeclarations",
+                "function": "makeCaseDeclaration"
+            },
+            {
+                "startline": 404,
+                "endline": 406,
+                "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+                "module" : "Language.PureScript.Sugar.CaseDeclarations",
+                "function": "makeCaseDeclaration"
+            },
+            {
+                "startline": 410,
+                "endline": 410,
+                "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+                "module" : "Language.PureScript.Sugar.CaseDeclarations",
+                "function": "makeCaseDeclaration"
+            },
+            {
+                "startline": 415,
+                "endline": 415,
+                "file" : "./src/Language/PureScript/Sugar/CaseDeclarations.hs",
+                "module" : "Language.PureScript.Sugar.CaseDeclarations",
+                "function": "makeCaseDeclaration"
+            }
+        ]
+    }
+]
