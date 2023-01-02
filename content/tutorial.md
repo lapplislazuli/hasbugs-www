@@ -41,7 +41,7 @@ TODO: How to pull and run an image
 
 In case you want to alter the project and re-run the CI, you will have to first manifest the datapoints (see below), alter them and run their respective docker build. 
 
-*Note*: The project will require a lot of disk space for all docker images. Please be careful. 
+*Note*: The project will require a lot of disk space for all docker images (~10gb/image). Please be careful. 
 
 ## Datapoints as JSON
 
