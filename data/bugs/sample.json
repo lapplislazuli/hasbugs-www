@@ -1,4 +1,5 @@
-[
+{
+    "bugs" : [
     {
         "id": "cabal-1",
         "repositoryurl": "git@github.com:haskell/cabal",
@@ -230,3 +231,4 @@
         ]
     }
 ]
+}

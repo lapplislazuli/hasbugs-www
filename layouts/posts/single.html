@@ -1,0 +1,7 @@
+{{define "main"}}
+<h1>Hallo Welt!</h1>
+{{ range $.Site.Data.bugs.sample }}
+   {{ partial "utilities/bug-template.html" . }}
+{{ end }}
+
+{{end}}
