@@ -22,14 +22,13 @@ params:
     faviconColor: "#000000"
 
   location:
-    - "3891 Ranchview Dr. Richardson, California 62639"
-    - "4517 Washington Ave. Manchester, Kentucky 39495"
+    - "Van Mourik Broekmanweg 28,2628 XE Delft"
 
   contact:
     - "L.H.Applis@tudelft.nl"
-    - "207.555.0119"
+    - "A.Panichella@tudelft.nl"
 
-  copyright: "© 2022 Leonhard Applis All Rights Reserved"
+  copyright: "© 2023 Leonhard Applis All Rights Reserved"
 
   postProcess: false
 
