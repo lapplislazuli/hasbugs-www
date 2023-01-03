@@ -6,4 +6,4 @@ content:
   image: "images/engerling-3.png"
   button:
     label: "Showcase"
-    url: "/bug-showcase"
+    url: "/bugs"

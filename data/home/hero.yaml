@@ -11,5 +11,5 @@ content:
 
   buttonSecondary:
     label: "To the Data"
-    url: "/bug-showcase"
+    url: "/bugs"
 

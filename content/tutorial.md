@@ -13,7 +13,7 @@ Thanks for having a look.
 Depending on what you want to do, we have different formats provided:
 
 - [A Repository for docker images](https://github.com/orgs/ciselab/packages?repo_name=HasBugs)
-- [Datapoints as JSON](/bug-showcase)
+- [Datapoints as JSON](/bugs)
 - ["manifested" Haskell Projects](https://github.com/ciselab/HasBugs)
 
 An important point is our naming: 
@@ -45,7 +45,7 @@ In case you want to alter the project and re-run the CI, you will have to first 
 
 ## Datapoints as JSON
 
-This should be the easiest one - for you to browse through the datapoints you can just [see the data-showcase](/bug-showcase). 
+This should be the easiest one - for you to browse through the datapoints you can just [see the data-showcase](/bugs). 
 
 Other than that, all datapoints are found in [the repository](https://github.com/ciselab/HasBugs) sorted as single *json*s in the folder *references*. 
 A toplevel json is also provided that contains all datapoints as a list.  

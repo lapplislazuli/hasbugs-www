@@ -42,7 +42,7 @@ menus:
       weight: 1
 
     - name: "Bug Showcase"
-      url: "/bug-showcase"
+      url: "/bugs"
       weight: 2
 
     - name: "Tutorial"
@@ -65,7 +65,7 @@ menus:
       weight: 1
 
     - name: "Bug Showcase"
-      url: "/bug-showcase"
+      url: "/bugs"
       weight: 2
 
     - name: "Tutorial"

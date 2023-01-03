@@ -24,4 +24,4 @@ content:
       text: "Picking up best practices, with our dataset you get tests, multi-location faults, frameworks,related issues and much more"
       button:
         label: "Data Showcase"
-        url: "/bug-showcase"
+        url: "/bugs"
