@@ -1,6 +1,6 @@
 {{/* note: I expect the repostioryurl to always start with git@, hence the substring */}}
 {{$gitlink:=(print "https://www." (replace (substr .repositoryurl 4) ":" "/"))}}
-<div>
+<div class="card bg-blue-16 border-0 border-radius-34 p-4">
     <p>ghc-version: <code>{{.ghcversion}}</code></p>
     <p>hasbugs-version: <code>{{.hasbugsversion}}</code></p>
     <p>license: <code>{{.license}}</code></p>

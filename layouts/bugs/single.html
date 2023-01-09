@@ -19,11 +19,11 @@
                   <h2 class="display-1 fw-bold text-left text-primary pb-3">{{ . }}</h2>
                 {{ end }}
                 {{ with .description }}
-                  <p class="text-black-61 text-center pb-3">{{ . }}</p>
+                  <p class="text-black-61 text-left pb-3">{{ . }}</p>
                 {{ end }}
               </div>
             </div>
-            <div id="infobox"  class="flex-column"style="width:30%">
+            <div id="infobox"  class="flex-column"style="width:25%">
               {{partial "utilities/bug-infobox.html" .}} 
             </div>
           </div>
@@ -48,17 +48,19 @@
   {{ else }}
     Troubles loading datapoints. 
   {{ end }}
+  <div class="row justify-content-center pb-5" id="bug-navigation-footer"> 
 
-  <div class="next-post">
-    {{ if .NextPage }}
-    <a class="link-reverse" href="{{ .NextPage.Permalink }}?ref=footer">« {{ .NextPage.Title | truncate 50 "..." }}</a>
-    {{ end }}
+    <div class="next-post">
+      {{ if .NextPage }}
+      <a class="link-reverse btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .NextPage.Permalink }}?ref=footer"><span class="ms-2">{{ partial "icons/arrow-left.html" }}</span>{{ .NextPage.Title | truncate 50 "..." }}</a>
+      {{ end }}
+    </div>
+    <div class="previous-post">
+      {{ if .PrevPage }}
+      <a class="link-reverse btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
+      {{ end }}
+    </div>
+
   </div>
-  <div class="previous-post">
-    {{ if .PrevPage }}
-    <a class="link-reverse" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}} »</a>
-    {{ end }}
-  </div>
-  <div class="row pb-5">
 
 {{ end }}
