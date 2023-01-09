@@ -1,5 +1,6 @@
 {
     "id": "hls-1",
+    "hasbugsversion":"1.0.0",
     "repositoryurl": "git@github.com:haskell/haskell-language-server",
     "repository": "hls",
     "license": "Apache-2.0",
