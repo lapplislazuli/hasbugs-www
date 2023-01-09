@@ -5,6 +5,11 @@
   {{ $param_id:=.Params.id}}
   {{ range .Site.Data.bugs}}
     {{ if (eq .id $param_id) }}
+    {{ $faulthashshort:=(substr .faultcommit 0 8 )}}
+    {{ $fixhashshort:=(substr .fixcommit 0 8 )}}
+    {{ $repourl:=(print "https://www." (replace (substr .repositoryurl 4) ":" "/"))}}
+    {{ $faulturl:=(print $repourl "/commit/" .faultcommit)}}
+    {{ $fixurl:=(print $repourl "/commit/" .fixcommit)}}
       <section class="section blog-single py-5">
         <div class="container">
           <div class="row justify-content-center pb-5">
@@ -26,10 +31,10 @@
             <div class="col-12 d-flex justify-content-center">
               <div class="blog-content fs-5">
     
-                Faults:
+                <p>Faults<a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{$faulturl}}">{{$faulthashshort}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a></p>
                 {{partial "utilities/code-block.html" .faultlocations}}
     
-                Fixes:
+                <p>Fixes<a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{$fixurl}}">{{$fixhashshort}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a></p>
                 {{partial "utilities/code-block.html" .fixlocations}}
 
               </div>
