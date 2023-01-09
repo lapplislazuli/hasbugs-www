@@ -1,0 +1,51 @@
+
+  {{ $data_path := path.Join (string .Site.Data.bugs) (string .Params.id) }}
+{{ with $data_path}}
+  <section class="section blog-single py-5">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-12">
+          {{ with .id }}
+            <h2 class="display-1 fw-bold text-left text-primary pb-3">{{ . }}</h2>
+          {{ end }}
+          {{ with .description }}
+            <p class="text-black-61 text-center pb-3">{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="blog-content fs-5">
+
+            Faults:
+            ```json<br>
+            {{ .fixlocations }}
+            <br>
+            ```
+
+            Fixes:
+            ```json<br>
+            {{ .fixlocations }}
+            <br>
+            ```
+          </div>
+        </div>
+      </div>
+      
+      <div class="next-post">
+        {{ if .NextPage }}
+        <a class="link-reverse" href="{{ .NextPage.Permalink }}?ref=footer">« {{ .NextPage.Title | truncate 50 "..." }}</a>
+        {{ end }}
+      </div>
+      
+      <div class="previous-post">
+        {{ if .PrevPage }}
+        <a class="link-reverse" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}} »</a>
+        {{ end }}
+      </div>
+      <div class="row pb-5">
+      </div>
+    </div>
+  </section>
+  {{end}}
+{{ end }}
