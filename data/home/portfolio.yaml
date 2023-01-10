@@ -11,12 +11,6 @@ content:
     Also, different task need different information - for many datasets these are only derived from builds or using tools. 
     We deserve better."
 
-    buttons: 
-      - label: "See live"
-        url: "#"
-
-      - label: "Read more"
-        url: "#"
 
   - image: "images/engerling-3.png"
     pretitle: "Problem 2"
@@ -28,13 +22,6 @@ content:
     Let's try to help pick everyone up.
     "
 
-    buttons: 
-      - label: "See live"
-        url: "#"
-
-      - label: "Read more"
-        url: "#"
-
   - image: "images/engerling-3.png"
     pretitle: "Problem 3"
     title: "Reproducibility"
@@ -43,14 +30,6 @@ content:
     I am still thinking a lot about this. I think there is some truth to it.
     However, I have also seen how much time and energy I used to reproduce results.
     Maybe exact reproducibility is a myth, but wouldn't it be nice to have things that give some output?"
-
-
-    buttons: 
-      - label: "See live"
-        url: "#"
-
-      - label: "Read more"
-        url: "#"
 
   - image: "images/engerling-3.png"
     pretitle: "Problem 4"
@@ -61,10 +40,3 @@ content:
     That is all fun and games, but to really put things to the test you need a human-evaluated gold standard to test against.
     We got you covered.
     "
-
-    buttons: 
-      - label: "See live"
-        url: "#"
-
-      - label: "Read more"
-        url: "#"
