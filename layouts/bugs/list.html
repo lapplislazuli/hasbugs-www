@@ -17,6 +17,16 @@
           <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
             <div class="card-body">
               <h5 class="card-title fw-semibold">{{ .Title }}</h5>
+              {{/* TODO: This breaks the logic? 
+              <div id="category-box">
+                {{ with .Params.categories }}
+                  {{partial "utilities/bubbly-list.html" . }}
+                {{ end }}
+                {{ with .Params.tags }}
+                  {{partial "utilities/bubbly-list.html" . }}
+                {{ end }}
+              </div>
+              */}}
               <p class="card-text text-black-61">{{ .Params.description | plainify }}</p>
             </div>
           </a>
