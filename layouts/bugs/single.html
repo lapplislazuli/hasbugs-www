@@ -27,17 +27,22 @@
               {{partial "utilities/bug-infobox.html" .}} 
             </div>
           </div>
-          <div class="row pb-5">
-            <div class="col-12 d-flex justify-content-center">
-              <div class="blog-content fs-5">
-    
-                <p>Faults<a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{$faulturl}}">{{$faulthashshort}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a></p>
-                {{partial "utilities/code-block.html" .faultlocations}}
-    
-                <p>Fixes<a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{$fixurl}}">{{$fixhashshort}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a></p>
-                {{partial "utilities/code-block.html" .fixlocations}}
+          <div id="detailed-info-box" class="row pb-5 justify-content-center">
+            {{ partial "utilities/detailed-bug-infobox.html" . }}
+          </div>
 
-              </div>
+          <div id="fix-and-fault-row" class="row pb-5">
+              <div class="col-12 d-flex justify-content-center">
+                <div id="fault-box" style="width: 45%; margin: 4px 4px 4px 4px;">
+                  <p><a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{$faulturl}}">Faults @{{$faulthashshort}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a></p>
+                  {{partial "utilities/code-block.html" .faultlocations}}
+                </div>
+                <div id="fix-box" style="width: 45%; margin: 4px 4px 4px 4px;">
+                  <p><a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{$fixurl}}">Fixes @{{$fixhashshort}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a></p>
+                  {{partial "utilities/code-block.html" .fixlocations}}
+                </div>
+                
+                </div>
             </div>
           </div>
           
@@ -50,12 +55,12 @@
   {{ end }}
   <div class="row justify-content-center pb-5" id="bug-navigation-footer"> 
 
-    <div class="next-post">
+    <div class="next-post" style="width: 18%;">
       {{ if .NextPage }}
       <a class="link-reverse btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .NextPage.Permalink }}?ref=footer"><span class="ms-2">{{ partial "icons/arrow-left.html" }}</span>{{ .NextPage.Title | truncate 50 "..." }}</a>
       {{ end }}
     </div>
-    <div class="previous-post">
+    <div class="previous-post" style="width: 18%;">
       {{ if .PrevPage }}
       <a class="link-reverse btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
       {{ end }}

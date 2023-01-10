@@ -1,0 +1,24 @@
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .ibtd {padding: 2px 2px 2px 2px; margin: 2px 2px 2px 2px}
+    </style>
+
+<div class="text-black-61  pb-3">
+    <table>
+    <thead> </thead>
+    <tbody>
+        <tr>
+        <td class="ibtd" >Categories</td>
+        <td class="ibtd">{{ partial "utilities/bubbly-list.html" .categories }}</td>
+        <td class="ibtd">Test Framworks</td>
+        <td class="ibtd">{{ partial "utilities/bubbly-list.html" .testframeworks }}</td>
+        </tr>
+        <tr>
+        <td class="ibtd" >Related PRs</td>
+        <td class="ibtd" >{{ partial "utilities/link-list.html" .relatedprs}}</td>
+        <td class="ibtd" >Related Issues</td>
+        <td class="ibtd" >{{ partial "utilities/link-list.html" .relatedissues}}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
