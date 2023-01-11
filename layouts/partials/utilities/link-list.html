@@ -1,10 +1,14 @@
 {{/* This Template is meant to make a small list of the urls for PRS and Issues*/}}
 <style type="text/css">
-    .linklist {margin: 3px 0px 3px 0px; }
+    .linklist {margin: 3px 0px 3px 0px; list-style-type: none;}
 </style>
 
+{{ if . }}
 <ul>
     {{ range . }}
     <li class="linklist"><a href={{.}}> {{ . }}</a></li>
     {{ end }}
 </ul>
+{{ else }}
+( No related Item tracked)
+{{ end }}
