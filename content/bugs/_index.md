@@ -1,5 +1,5 @@
 +++
 author = "Leonhard Applis"
 title = "Bug Showcase"
-description = "Test Description goes here"
+description = "Check out what we got for you in HasBugs"
 +++
