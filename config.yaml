@@ -12,9 +12,9 @@ params:
   title: "HasBugs"
   description: "A Dataset of Haskell Bugs"
   images: 
-    - "images/engerling-3.png"
+    - "images/mona-3.png"
 
-  logo: "images/engerling-3.png"
+  logo: "images/engerling-4.png"
 
   favicons:
     themeColor: "#FFFFFF"

@@ -4,7 +4,7 @@ id: "hero"
 content:
   title: "Haskell Bugs - Functional Bugs and their Fixes"
   text: "When it compiles it's correct. Unless it isn't. HasBugs is a small, handpicked Dataset of Bugs from popular Haskell FOSS Programs and Libraries. Our bugs come with 3 versions: buggy, tested, fixed that you can run with Docker. Oh, and we actually had a look what is failing!"
-
+  
   buttonPrimary:
     label: "How to"
     url: "/tutorial"

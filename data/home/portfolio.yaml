@@ -11,9 +11,18 @@ content:
     Also, different task need different information - for many datasets these are only derived from builds or using tools. 
     We deserve better."
 
-
   - image: "images/engerling-3.png"
     pretitle: "Problem 2"
+    title: "Reproducibility"
+    text: "Recently someone asked me if it is worth the effort caring for reproducibility. 
+    Noone reuses your things and if one or two people want to, they can just sent you an email. 
+    I am still thinking a lot about this. I think there is some truth to it.
+    However, I have also seen how much time and energy I used to reproduce results.
+    Maybe exact reproducibility is a myth, but wouldn't it be nice to have things that give some output?"
+
+
+  - image: "images/mona-4.png"
+    pretitle: "Problem 3"
     title: "Accessability"
     text: "Things you can't use are not really useful. 
     We know that working with datasets isn't exactly a walk in the park. 
@@ -22,16 +31,7 @@ content:
     Let's try to help pick everyone up.
     "
 
-  - image: "images/engerling-3.png"
-    pretitle: "Problem 3"
-    title: "Reproducibility"
-    text: "Recently someone asked me if it is worth the effort caring for reproducibility. 
-    Noone reuses your things and if one or two people want to, they can just sent you an email. 
-    I am still thinking a lot about this. I think there is some truth to it.
-    However, I have also seen how much time and energy I used to reproduce results.
-    Maybe exact reproducibility is a myth, but wouldn't it be nice to have things that give some output?"
-
-  - image: "images/engerling-3.png"
+  - image: "images/engerling-variety-1.png"
     pretitle: "Problem 4"
     title: "Quality"
     text: "Bugs are not the same. Datapoints can vary greatly in their information-granularity and quantity. 

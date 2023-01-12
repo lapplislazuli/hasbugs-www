@@ -3,7 +3,7 @@ id: "cta"
 
 content:
   title: "Embrace the Bugs!"
-  image: "images/engerling-3.png"
+  image: "images/mona-3-variant-2.png"
   button:
     label: "Showcase"
     url: "/bugs"
