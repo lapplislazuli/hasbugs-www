@@ -1,0 +1,47 @@
+<style type="text/css">
+    .bulletpnt { text-align: right; font-size: larger; width: 20%;}
+    .bulletcnt { width: 60%;}
+</style>
+<div> 
+    <div class="row pb-4">
+        <div class="bulletpnt">
+            Categories:
+        </div>
+        <div class="bulletcnt">
+            {{ partial "utilities/bubbly-list.html" .categories }}
+        </div>
+    </div>
+
+    <div class="row pb-4">
+        <div class="bulletpnt">
+            Test Frameworks:
+        </div>
+        <div class="bulletcnt">
+            {{ partial "utilities/bubbly-list.html" .testframeworks }}
+        </div>
+    </div>
+
+    {{ $prs := .relatedprs}}
+    {{ with partial "func/HasValues" .relatedprs}}
+    <div class="row pb-4">
+        <div class="bulletpnt">
+            PRs:
+        </div>
+        <div class="bulletcnt">
+            {{ partial "utilities/link-list.html" $prs}}
+        </div>
+    </div>
+    {{ end }}   
+
+    {{ $issues := .relatedissues}}
+    {{ with partial "func/HasValues" .relatedissues}}
+    <div class="row pb-4">
+        <div class="bulletpnt">
+            Issues:
+        </div>
+        <div class="bulletcnt">
+            {{ partial "utilities/link-list.html" $issues}}
+        </div>
+    </div>
+    {{ end }}    
+</div>
