@@ -6,4 +6,4 @@ content:
   image: "./images/1200w/mona-hunting-1-cut.png"
   button:
     label: "Showcase"
-    url: "/bugs"
+    url: "./bugs"
