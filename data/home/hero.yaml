@@ -7,9 +7,9 @@ content:
   
   buttonPrimary:
     label: "How to"
-    url: "/tutorial"
+    url: "./tutorial"
 
   buttonSecondary:
     label: "To the Data"
-    url: "/bugs"
+    url: "./bugs"
 

@@ -3,7 +3,7 @@ id: "cta"
 
 content:
   title: "Embrace the Bugs!"
-  image: "images/1200w/mona-hunting-1-cut.png"
+  image: "./images/1200w/mona-hunting-1-cut.png"
   button:
     label: "Showcase"
     url: "/bugs"
