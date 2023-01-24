@@ -2,7 +2,7 @@ enabled: true
 id: "portfolio"
 
 content:
-  - image: "images/engerling-3.png"
+  - image: "images/1200w/mona-coccoon-1-cut.png"
     pretitle: "Problem 1"
     title: "Information"
     text: "What is happening? To effectively work with bugs, you need to understand the problem. 
@@ -11,7 +11,7 @@ content:
     Also, different task need different information - for many datasets these are only derived from builds or using tools. 
     We deserve better."
 
-  - image: "images/engerling-3.png"
+  - image: "images/800w/engerling-incubator-1.png"
     pretitle: "Problem 2"
     title: "Reproducibility"
     text: "Recently someone asked me if it is worth the effort caring for reproducibility. 
@@ -21,7 +21,7 @@ content:
     Maybe exact reproducibility is a myth, but wouldn't it be nice to have things that give some output?"
 
 
-  - image: "images/mona-4.png"
+  - image: "images/1x/mona-4-cut.png"
     pretitle: "Problem 3"
     title: "Accessability"
     text: "Things you can't use are not really useful. 
@@ -31,7 +31,7 @@ content:
     Let's try to help pick everyone up.
     "
 
-  - image: "images/engerling-variety-1.png"
+  - image: "images/800w/engerling-variety-1-cut.png"
     pretitle: "Problem 4"
     title: "Quality"
     text: "Bugs are not the same. Datapoints can vary greatly in their information-granularity and quantity. 
