@@ -20,27 +20,51 @@
     "relatedprs": ["https://github.com/haskell/cabal/pull/7770"],
     
     "faultlocations" : [
-    {
-        "startline": 5,
-        "endline": 15,
-        "file" : "./project/.../Module.hs",
-        "module" : "Fully.Qualified.Module",
-        "function": "main"
-    },{
-        "startline": 25,
-        "endline": 35,
-        "file": "./project/.../Module.hs",
-        "module": "Fully.Qualified.Module",
-        "function": "helper"
-    }
-    ],
-    "fixlocations" : [
-    {
-        "startline": 5,
-        "endline": 20,
-        "file": "./project/.../Module.hs",
-        "module": "Fully.Qualified.Module",
-        "function": "main"
-    }
-    ]
+        {
+            "startline": 67,
+            "endline": 78,
+            "file" : "./cabal-install/src/Distribution/Client/Init/Format.hs",
+            "module" : "Distribution.Client.Init.Format",
+            "function": "fieldD "
+        },{
+            "startline": 95,
+            "endline": 95,
+            "file": "./cabal-install/src/Distribution/Client/Init/Format.hs",
+            "module": "Distribution.Client.Init.Format",
+            "function": "fieldD "
+        },{
+            "startline": 107,
+            "endline": 107,
+            "file": "./cabal-install/src/Distribution/Client/Init/Format.hs",
+            "module": "Distribution.Client.Init.Format",
+            "function": "withComments "
+        }
+        ],
+        "fixlocations" : [
+            {
+                "startline": 67,
+                "endline": 69,
+                "file" : "./cabal-install/src/Distribution/Client/Init/Format.hs",
+                "module" : "Distribution.Client.Init.Format",
+                "function": "fieldD "
+            },{
+                "startline": 78,
+                "endline": 82,
+                "file": "./cabal-install/src/Distribution/Client/Init/Format.hs",
+                "module": "Distribution.Client.Init.Format",
+                "function": "fieldD "
+            },{
+                "startline": 91,
+                "endline": 91,
+                "file": "./cabal-install/src/Distribution/Client/Init/Format.hs",
+                "module": "Distribution.Client.Init.Format",
+                "function": "fieldD "
+            },{
+                "startline": 103,
+                "endline": 105,
+                "file": "./cabal-install/src/Distribution/Client/Init/Format.hs",
+                "module": "Distribution.Client.Init.Format",
+                "function": "withComments "
+            }
+        ]
 }
