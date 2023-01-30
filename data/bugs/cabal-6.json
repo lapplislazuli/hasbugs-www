@@ -3,6 +3,7 @@
     "repositoryurl": "git@github.com:haskell/cabal",
     "repository": "cabal",
     "license": "BSD-3",
+    "hasbugsversion":"1.0.0",
     "faultcommit": "e69172166e1af60830247442939f413d472f0689",
     "fixcommit": "5adaf5855c856f1f2400c1a5821bc97503b413bc",
     
