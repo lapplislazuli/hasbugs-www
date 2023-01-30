@@ -36,8 +36,12 @@ We tried to compensate the long build times by separating *build* and *tests* in
 If you want to run a project, you can do so by running: 
 
 ```sh
-TODO: How to pull and run an image
+docker pull ghcr.io/ciselab/hasbugs/shellcheck-1:tested-1.0.0
+docker run ghcr.io/ciselab/hasbugs/shellcheck-1:tested-1.0.0
 ```
+*last checked docker version: `20.10.21, build baedalf`*
+
+This should work for all datapoints. Just adjust the bug-id and version (`buggy`,`tested` or `fixed`). The available bug ids are visible on this website. 
 
 In case you want to alter the project and re-run the CI, you will have to first manifest the datapoints (see below), alter them and run their respective docker build. 
 
