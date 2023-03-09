@@ -149,7 +149,8 @@ If you feel like it, you can pull all data by looking into */tools* and run *get
     ├── ...
 ```
 
-By default, we remove all *.git* folders from the projects to (massively) safe space. You can change this behaviour by setting the `$remove_history` flag in [get-repo.sh](https://github.com/ciselab/HasBugs/blob/main/tools/get-repo.sh) to false. 
+By default, we keep *.git* folders from the projects, as some need it to function (they use caching, very interesting). 
+You can change this behaviour by setting the `$remove_history` flag in [get-repo.sh](https://github.com/ciselab/HasBugs/blob/main/tools/get-repo.sh) to what you prefer. Not having the git history will save you a massive amount of disk space.  
 
 ## Adding a Datapoint
 
