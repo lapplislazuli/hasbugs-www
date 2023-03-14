@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{/* We iterate over all datapoints, and if the site's id matches on in datapoinst we continue */}}
-
+  
   {{ $param_id:=.Params.id}}
   {{ range .Site.Data.bugs}}
     {{ if (eq .id $param_id) }}
@@ -54,15 +54,37 @@
     Troubles loading datapoints. 
   {{ end }}
   <div class="row justify-content-center pb-5" id="bug-navigation-footer"> 
+    <script>
+      // Script handles navigation by arrows. 
 
+      window.addEventListener("keydown", function (event) {
+      if (event.defaultPrevented) {
+        return; // Do nothing if the event was already processed
+      }
+
+      switch (event.key) {
+        case "ArrowLeft":
+          window.location.href = document.getElementsByName("nextpage")[0].href;
+          break;
+        case "ArrowRight":
+          window.location.href = document.getElementsByName("prevpage")[0].href;
+          break;
+        default:
+          return; // Quit when this doesn't handle the key event.
+      }
+
+      // Cancel the default action to avoid it being handled twice
+      event.preventDefault();
+    }, true);
+  </script>
     <div class="next-post" style="width: 18%;">
       {{ if .NextPage }}
-      <a class="link-reverse btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .NextPage.Permalink }}?ref=footer"><span class="ms-2">{{ partial "icons/arrow-left.html" }}</span>{{ .NextPage.Title | truncate 50 "..." }}</a>
+      <a name="nextpage" class="link-reverse btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .NextPage.Permalink }}?ref=footer"><span class="ms-2">{{ partial "icons/arrow-left.html" }}</span>{{ .NextPage.Title | truncate 50 "..." }}</a>
       {{ end }}
     </div>
     <div class="previous-post" style="width: 18%;">
       {{ if .PrevPage }}
-      <a class="link-reverse btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
+      <a name="prevpage" class="link-reverse btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
       {{ end }}
     </div>
 
