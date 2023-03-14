@@ -7,6 +7,7 @@ title: "HasBugs"
 # googleAnalytics: ""
 
 summaryLength: 20
+paginate: 9
 
 params:
   title: "HasBugs"
