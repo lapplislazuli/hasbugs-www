@@ -1,0 +1,22 @@
+{{/* This Template is meant to make a small list of the urls for PRS and Issues*/}}
+<style type="text/css">
+    .linklist {margin: 3px 0px 3px 0px; list-style-type: none;}
+</style>
+
+{{ if . }}
+<ul>
+    {{ range . }}
+        {{ if eq . "" }}
+            {{/* I am just here to filter out empty elements, as some items did not have a pr for examle */}}
+        {{ else }}
+            {{ $url:= . }}
+            {{ $label:= cond (strings.Contains $url "issue") "issues" "pull"}}
+            {{ $id := index (split $url "/") (sub (len (split $url "/")) 1) }}
+
+            <a class="linklist btn btn-secondary px-4 my-1" href={{.}}> {{ $label }}/{{ $id }}</a>
+        {{end}}
+    {{ end }}
+</ul>
+{{ else }}
+( No related Item tracked)
+{{ end }}

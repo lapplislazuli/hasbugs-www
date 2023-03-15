@@ -22,25 +22,14 @@
     </div>
 
     {{ $prs := .relatedprs}}
-    {{ with partial "func/HasValues" .relatedprs}}
-    <div class="row pb-4">
-        <div class="bulletpnt">
-            PRs:
-        </div>
-        <div class="bulletcnt">
-            {{ partial "utilities/link-list.html" $prs}}
-        </div>
-    </div>
-    {{ end }}   
-
     {{ $issues := .relatedissues}}
-    {{ with partial "func/HasValues" .relatedissues}}
+    {{ with partial "func/HasValues" (union .relatedissues .relatedprs) }}
     <div class="row pb-4">
         <div class="bulletpnt">
-            Issues:
+            GitHub Artifacts :
         </div>
         <div class="bulletcnt">
-            {{ partial "utilities/link-list.html" $issues}}
+            {{ partial "utilities/pr-list.html" (union $issues $prs) }}
         </div>
     </div>
     {{ end }}    
