@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 baseURL: "https://ciselab.github.io/HasBugs/"
-=======
-baseURL: "https://ciselab.github.io/hasbugs/"
->>>>>>> 897bb23 (Changed base-url)
 theme: "up-business-theme"
 languageCode: "en-us"
 
